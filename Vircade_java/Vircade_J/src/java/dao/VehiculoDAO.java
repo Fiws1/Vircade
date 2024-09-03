@@ -34,7 +34,7 @@ public class VehiculoDAO extends DAO{
                 v.setCilindraje(rs.getString("cilindraje"));
                 v.setColor(rs.getString("Color"));
                 v.setPrecio(rs.getInt("Precio"));
-                v.setImagen(rs.getBlob("Imagen"));
+                v.setImagen(rs.getString("Imagen"));
                 v.setModelo_vehiculo(rs.getInt("Modelo_vehiculo"));
                 v.setMarca_vehiculo(rs.getInt("Marca_vehiculo"));
                 v.setCombustible_vehiculo(rs.getInt("Combustible_vehiculo"));
@@ -63,7 +63,7 @@ public class VehiculoDAO extends DAO{
                 ps.setString(3, vehi.getCilindraje());
                 ps.setString(4, vehi.getColor());
                 ps.setInt(5, vehi.getPrecio());
-                ps.setBlob(6, vehi.getImagen());
+                ps.setString(6, vehi.getImagen());
                 ps.setInt(7, vehi.getModelo_vehiculo());
                 ps.setInt(8, vehi.getMarca_vehiculo());
                 ps.setInt(9, vehi.getCombustible_vehiculo());
@@ -94,7 +94,7 @@ public class VehiculoDAO extends DAO{
                 v.setCilindraje(rs.getString("cilindraje"));
                 v.setColor(rs.getString("Color"));
                 v.setPrecio(rs.getInt("Precio"));
-                v.setImagen(rs.getBlob("Imagen"));
+                v.setImagen(rs.getString("Imagen"));
                 v.setModelo_vehiculo(rs.getInt("Modelo_vehiculo"));
                 v.setMarca_vehiculo(rs.getInt("Marca_vehiculo"));
                 v.setCombustible_vehiculo(rs.getInt("Combustible_vehiculo"));
@@ -131,7 +131,7 @@ public class VehiculoDAO extends DAO{
                 v.setCilindraje(rs.getString("cilindraje"));
                 v.setColor(rs.getString("Color"));
                 v.setPrecio(rs.getInt("Precio"));
-                v.setImagen(rs.getBlob("Imagen"));
+                v.setImagen(rs.getString("Imagen"));
                 v.setModelo_vehiculo(rs.getInt("Modelo_vehiculo"));
                 v.setMarca_vehiculo(rs.getInt("Marca_vehiculo"));
                 v.setCombustible_vehiculo(rs.getInt("Combustible_vehiculo"));
@@ -159,7 +159,7 @@ public class VehiculoDAO extends DAO{
             ps.setString(3, vehi.getCilindraje());
             ps.setString(4, vehi.getColor());
             ps.setInt(5, vehi.getPrecio());
-            ps.setBlob(6, vehi.getImagen());
+            ps.setString(6, vehi.getImagen());
             ps.setInt(7, vehi.getModelo_vehiculo());
             ps.setInt(8, vehi.getMarca_vehiculo());
             ps.setInt(9, vehi.getCombustible_vehiculo());
