@@ -1,12 +1,8 @@
-
 package modelo;
-
-import java.sql.Blob;
 
 public class Vehiculo {
     private int Id_Vehiculo,Precio,Modelo_vehiculo,Marca_vehiculo,Combustible_vehiculo,Tipo_vehiculo,concesionario;
-    private String Vehiculo, Linea, cilindraje, Color;
-    private Blob Imagen;
+    private String Vehiculo, Linea, cilindraje, Color, Imagen;
     private Modelo Modelo;
     private Marca Marca;
     private Combustible Combustible;
@@ -101,11 +97,11 @@ public class Vehiculo {
         this.Color = Color;
     }
 
-    public Blob getImagen() {
+    public String getImagen() {
         return Imagen;
     }
 
-    public void setImagen(Blob Imagen) {
+    public void setImagen(String Imagen) {
         this.Imagen = Imagen;
     }
 
